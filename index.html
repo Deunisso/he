@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hora Extra</title>
+  <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<table>
+  <tr>
+    <td class="blue" colspan="2"><span>Cálculo de Hora Extra</span></td>
+  </tr>
+  <tr>
+    <td class="gray">Salário</td>
+    <td class="gray"><input onchange="somaTudo()" type="text" name="campoUm" class="gray" id="campoUm" maxlength="4">
+    <var id="valorUm"></var>
+    </input>
+    </td>
+  </tr>  
+  <tr>
+    <td class="yellow">Tipo</td>
+    <td class="yellow"><select onchange="somaTudo()" type="text" name="campoDois" id="campoDois">
+      <option value="17" selected>Dia normal (70%)</option>
+      <option value="21">Domingo ou Feriado (110%)</option>
+      <var id="valorDois"></var>
+      </select>
+    </td>
+  </tr>  
+  <tr>
+    <td class="gray">Parada</td>
+    <td class="green">R$ <span id="TotalThree">0.00</span></td>
+  </tr>
+</table>
+</body>
+</html>
